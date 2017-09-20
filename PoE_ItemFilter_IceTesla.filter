@@ -1,6 +1,7 @@
 ﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
-# PoE 2.3.1 Loot Script
-# Updated 23/06/2016
+# ItemFilter - https://github.com/IceTesla/ItemFilter
+# PoE 3.0 Loot Script
+# Updated 20/09/2017
 # By IceTesla
 
 # Section: 通货
@@ -190,18 +191,25 @@ Show
 # 高级命运卡
 Show
     Class "Divination Card"
-    BaseType "Abandoned Wealth" "Bowyer's Dream" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Dapper Prodigy" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "The Thaumaturgist" "The Vast" "Wealth and Power"
-    SetBorderColor 30 144 255
-    SetFontSize 45
-    PlayAlertSound 5 100
-
-# 次级命运卡
+    BaseType "House of Mirrors" "The Doctor" "The Fiend"
+	
 Show
     Class "Divination Card"
-    BaseType "Lantador's Lost Love" "The Metalsmith's Gift" "The Scholar" "The Carrion Crow" "The Gambler" "Emperor's Luck" "Rain of Chaos" "The Flora's Gift" "The King's Blade" "Loyalty" "Prosperity" "Her Mask" "Shard of Fate" "The Endurance"
-    SetBorderColor 30 144 255
-    SetFontSize 45
-    PlayAlertSound 5 100
+    BaseType "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Polymath"
+	
+Show
+    Class "Divination Card"
+    BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul" "Emperor of Purity"
+	
+Show
+    Class "Divination Card"
+    BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament" "The Gambler" "Emperor's Luck"
+	"The King's Blade" "Loyalty" "Her Mask" 
+
+Dialla's Subjugation
+Hide
+    Class "Divination Card"
+    BaseType "Lantador's Lost Love" "The Metalsmith's Gift" "The Scholar" "The Carrion Crow"   "Rain of Chaos" "The Flora's Gift"   "Prosperity"  "Shard of Fate" "The Endurance"
 
 # 其他命运卡
 Show
@@ -384,7 +392,7 @@ Show
 
 # Section: 技能石
 
-# 瓦尔裂痕
+# 瓦尔裂痕 物品数量
 Show
     BaseType "Vaal Breach" "Item Quantity"
 
