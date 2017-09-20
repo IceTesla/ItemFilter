@@ -1,5 +1,6 @@
-# .gitignore
+﻿# .gitignore
 # 首先忽略所有的文件
 *
 # 不忽略下面指定的文件类型
 !PoE_ItemFilter_IceTesla.filter
+!.gitignore
