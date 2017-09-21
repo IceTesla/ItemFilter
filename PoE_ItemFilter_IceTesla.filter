@@ -219,55 +219,14 @@ Show
     SetFontSize 45
 
 # Section: 命运卡
-
-#  "狼的影子"（海昂的狂怒） （避免和高階卡片"彪狼"衝突）
-Show
-    Class "Divination Card"
-    BaseType "The Wolf's Shadow"
-
-# 明鏡（卡兰德的魔镜） 瘋醫（猎首） 惡魔（汙染猎首）
-Show
-    Class "Divination Card"
-    BaseType "House of Mirrors" "The Doctor" "The Fiend"
-	
-Show
-    Class "Divination Card"
-    BaseType "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Polymath" "Stacked Deck"
-
-Show
-    Class "Divination Card"
-    BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul" "Emperor of Purity"
-	
-Show
-    Class "Divination Card"
-    BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament" "The Gambler" "Emperor's Luck" "The King's Blade" "Loyalty" "Her Mask" "Dialla's Subjugation"
 	
 Hide
     Class "Divination Card"
-    BaseType "Lantador's Lost Love" "The Metalsmith's Gift" "The Scholar" "The Carrion Crow"   "Rain of Chaos" "The Flora's Gift"   "Prosperity"  "Shard of Fate" "The Endurance" "The Surgeon" "Turn the Other Cheek" "Thunderous Skies"
+    BaseType "Lantador's Lost Love" "The Metalsmith's Gift" "The Scholar" "The Carrion Crow"   "Rain of Chaos"  "Prosperity"  "Shard of Fate" "The Endurance" "The Surgeon" 
 
 # 其他命运卡
 Show
     Class "Divination Card"
-
-	
-#需要分类	
-Show
-    Class "Divination Card"
-    BaseType  "The Devastator" "The Harvester"        
-    SetTextColor 231 180 120
-    SetBorderColor 255 255 0
-    SetFontSize 45
-    PlayAlertSound 4 300
-     
-Show
-    Class "Divination Card"
-    BaseType      "Hubris" "Assassin's Favour"  "The Battle Born"     "The Avenger" "Lucky Connections" "The Watcher" "Coveted Possession"   "The Spoiled Prince" "The Encroaching Darkness"    "Anarchy's Price"   "Lost Worlds"      "The Cursed King"      "The Scavenger"   "Lingering Remnants" "Atziri's Arsenal" "The Calling"  
-    SetTextColor 231 180 120
-    SetBorderColor 0 0 255
-    SetFontSize 45
-    PlayAlertSound 2 300
-
 
 # Section: 珠宝
 
