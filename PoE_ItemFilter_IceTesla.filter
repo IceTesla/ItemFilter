@@ -47,7 +47,7 @@ Show
     SetBorderColor 231 180 120
 
 # 护甲片 智慧卷轴 磨刀石 传送卷轴
-Show
+Hide
     BaseType "Armourer's Scrap" "Scroll of Wisdom" "Blacksmith's Whetstone" "Portal Scroll"
 
 # Section: 特殊通货
@@ -59,14 +59,39 @@ Show
     SetTextColor 255 0 0
     SetBorderColor 255 0 0
 
-# 这是啥
-Show
-    Class "Soul"
-
 # 联盟石
 Show
-    Class "Leaguestone"
+    Class "Leaguestone" 
 
+Show
+    Class "Misc Map Items" 
+
+Show 
+	BaseType "Ancient Reliquary Key" "Pit Map"
+
+#-----------------------------------------------------------
+#++++++++++++++++++++【神諭聯盟物品】+++++++++++++++++++++++
+#-----------------------------------------------------------
+
+# "眾神殿之魂"
+Show
+    Class "Pantheon Soul"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 231 180 120
+    SetFontSize 43
+    PlayAlertSound 9 300
+
+# "威能碎片"
+Show
+    Class "Piece"
+    SetFontSize 43
+    SetTextColor 255 165 0
+    SetBackgroundColor 0 0 0
+    SetBorderColor 231 180 120
+    SetFontSize 43
+    PlayAlertSound 4 300	
+	
 # Section: 神谕联盟
 
 # 神谕石 無效石
@@ -85,6 +110,16 @@ Show
 Show
     BaseType "Engineer's Orb"
 
+# 古典遺鑰
+Show
+    Class "Misc Map Items"
+    BaseType "Ancient Reliquary Key"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 165 0
+    SetBorderColor 240 240 80
+    SetFontSize 45
+    PlayAlertSound 1 300	
+	
 Show
     Class "Piece"
 
@@ -128,7 +163,7 @@ Show
     BaseType "Splinter of Chayula"
 
 Show
-    BaseType "Blessing of"
+    BaseType "Blessing of" "Splinter of"
 
 # Section: 传奇物品
 
@@ -168,10 +203,7 @@ Show
 
 # 眾神聖器
 Show
-    BaseType "Divine Vessel" "Pit Map" "Stacked Deck"
-
-Show
-    Class "Misc Map Items" "Soul"
+    BaseType "Divine Vessel" 
 
 # 地图 地图碎片
 Show
@@ -187,15 +219,74 @@ Show
     SetFontSize 45
 
 # Section: 命运卡
+#-----------------------------------------------------------
+#++++++++++++++++++++++++【命運卡】+++++++++++++++++++++++++
+#-----------------------------------------------------------
 
-# 高级命运卡
+# "命運卡"-LowCard "狼的影子" （避免和高階卡片"彪狼"衝突）
+Show
+    Class "Divination Card"
+    BaseType "The Wolf's Shadow"
+    SetTextColor 231 180 120
+    SetBorderColor 255 255 208
+    SetFontSize 45
+    PlayAlertSound 2 200
+
+# "命運卡"-HighCard "瘋醫" "碎裂大帝" "惡魔" "飢餓" "寶箱" "黑暗術者" "失落遺骨" "王者之心" "棄財求生" "天堂執法官" "束縛之鍊" "藝者" "女王" "謙遜" "屹立不敗之人" "明鏡" "錢與權" "龍之心" "驕者必敗" "大奇術師" "大藝術家" "智慧啟蒙" "獵人的獎賞" "弓匠的夢想" "最後希望" "空靈" "奉獻" "大軍閥" "永恆不朽" "極致不凡" "蹂躪之王" "陰陽眼" "收割者" "生命之樹" "彪狼" "女武神" "莫測之海" "茂爾·佈雷德" "博學" "對峙" "雷火" "聖徒之財"
+Show
+    Class "Divination Card"
+    BaseType "The Doctor" "The Brittle Emperor" "The Fiend" "The Hunger" "The Hoarder" "The Dark Mage" "Time-Lost Relic" "The King's Heart" "Abandoned Wealth" "The Celestial Justicar" "The Chains that Bind" "The Artist" "The Queen" "Humility" "The Last One Standing" "House of Mirrors" "Wealth and Power" "The Dragon's Heart" "Pride Before the Fall" "The Thaumaturgist" "The Aesthete" "The Enlightened" "Hunter's Reward" "Bowyer's Dream" "Last Hope" "The Ethereal" "The Offering" "The Warlord" "The Immorta" "The Dapper Prodigy" "The Devastator" "Heterochromia" "The Harvester" "The Sephirot" "The Wolf" "The Valkyrie" "The Formless Sea" "Mawr Blaidd" "The Polymath" "The Standoff" "The Spark and the Flame" "The Saint's Treasure" 
+    SetTextColor 231 180 120
+    SetBorderColor 255 255 0
+    SetFontSize 45
+    PlayAlertSound 4 300
+
+# "命運卡"-MedCard "驚喜盒" "無情軍械" "小丑" "鋼之山谷" "背叛者" "賞金獵手" "薇妮雅的信物" "莉莎之息" "狂妄" "刺客的恩惠" "血肉之軀" "戰火鍛造" "製圖師" "鬥士" "希望" "渾沌性情" "力量之道" "復仇者" "好運連連" "凝視者" "飢渴之佔" "發明家" "聯姻" "驕縱皇子" "黑暗來犯" "怨忿" "遠征" "平壤" "海洋學者" "混亂代價" "製箭者" "勘查員" "希望微光" "失落帝國" "魅魔" "鼠輩" "危機" "大地吞食者" "競技場冠軍" "風暴呼喚者" "詛咒之王" "純潔帝王" "靈魂" "暴君" "幸運牌組" "懺悔者" "虛空" "清道夫" "刺蝟" "狼咬" "殘墟" "正氣" "淨白" "阿茲里的武庫" "傳喚"       
+Show
+    Class "Divination Card"
+    BaseType "Jack in the Box" "Merciless Armament" "The Jester" "The Valley of Steel Boxes" "The Traitor" "Treasure Hunter" "Vinia's Token" "Lysah's Respite" "Hubris" "Assassin's Favour" "The Body" "The Battle Born" "The Cartographer" "The Gladiator" "Hope" "Chaotic Disposition" "The Road to Power" "The Avenger" "Lucky Connections" "The Watcher" "Coveted Possession" "The Inventor" "The Union" "The Spoiled Prince" "The Encroaching Darkness" "The Wrath" "The Trial" "The Vast" "Scholar of the Seas" "Anarchy's Price" "The Fletcher" "The Surveyor" "Glimmer of Hope" "Lost Worlds" "The Demoness" "Rats" "The Risk" "Earth Drinker" "The Arena Champion" "The Stormcaller" "The Cursed King" "Emperor of Purity" "The Soul" "The Tyrant" "Lucky Deck" "The Penitent" "The Void" "The Scavenger" "The Porcupine" "The Wolven King's Bite" "Lingering Remnants" "Might is Right" "The Opulent" "Atziri's Arsenal" "The Calling"  
+    SetTextColor 231 180 120
+    SetBorderColor 0 0 255
+    SetFontSize 45
+    PlayAlertSound 2 300
+
+#--------------------【屏蔽的低價值卡片】-------------------------
+
+# "命運卡"-WorthlessCard "食腐掠鴉" "王者之刃" "鐵匠的贈禮" "學者" "外科醫師" "忍辱" "怒雷之空"
+Hide
+    Class "Divination Card"
+    BaseType "Carrion Crow" "King's Blade" "Metalsmith's Gift" "The Scholar" "The Surgeon" "Turn the Other Cheek" "Thunderous Skies"
+    SetTextColor 231 180 120
+    SetBorderColor 145 145 145
+    SetFontSize 45
+#-----------------------------------------------------------------
+ 
+# "命運卡"-LowCard"
+Show
+    Class "Divination Card"
+    SetTextColor 231 180 120
+    SetBorderColor 255 255 208
+    SetFontSize 45
+    PlayAlertSound 2 200
+
+#-----------------------------------------------------------
+# "命運卡"-LowCard "狼的影子" （避免和高階卡片"彪狼"衝突）
+Show
+    Class "Divination Card"
+    BaseType "The Wolf's Shadow"
+    SetTextColor 231 180 120
+    SetBorderColor 255 255 208
+    SetFontSize 45
+    PlayAlertSound 2 200
+	
+# 高级命运卡 
 Show
     Class "Divination Card"
     BaseType "House of Mirrors" "The Doctor" "The Fiend"
 	
 Show
     Class "Divination Card"
-    BaseType "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Polymath"
+    BaseType "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Polymath" "Stacked Deck"
 	
 Show
     Class "Divination Card"
@@ -203,10 +294,8 @@ Show
 	
 Show
     Class "Divination Card"
-    BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament" "The Gambler" "Emperor's Luck"
-	"The King's Blade" "Loyalty" "Her Mask" 
-
-Dialla's Subjugation
+    BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament" "The Gambler" "Emperor's Luck" "The King's Blade" "Loyalty" "Her Mask" "Dialla's Subjugation"
+	
 Hide
     Class "Divination Card"
     BaseType "Lantador's Lost Love" "The Metalsmith's Gift" "The Scholar" "The Carrion Crow"   "Rain of Chaos" "The Flora's Gift"   "Prosperity"  "Shard of Fate" "The Endurance"
@@ -272,6 +361,11 @@ Show
     ItemLevel < 60
 
 # Section: 优质白底
+
+# +3武器底子 粗製弓（火靈用）
+Show
+	BaseType "Crude Bow"
+	ItemLevel >= 50
 
 # 双子战爪 战叉 白金波刃 伏擊刺刃 海賊長刀 褻瀆法杖 魔性法杖 先驱者之弓 裂肉者 瓦尔巨斧
 Show
@@ -396,9 +490,9 @@ Show
 Show
     BaseType "Vaal Breach" "Item Quantity"
 
-# 启蒙 增幅 赋予 时空之门 瓦尔迅捷 瓦尔优雅 瓦尔清晰 瓦尔纪律 附加混沌伤害 减少格挡几率 引爆地雷
+# 启蒙 增幅 赋予 时空之门 瓦尔迅捷 瓦尔优雅 瓦尔清晰 瓦尔纪律 附加混沌伤害 减少格挡几率 引爆地雷 瓦尔召唤骷髅
 Show
-    BaseType "Enlighten" "Enhance" "Empower" "Portal" "Vaal Haste" "Vaal Grace" "Vaal Clarity" "Vaal Discipline" "Added Chaos Damage" "Detonate Mines" "Block Chance Reduction"
+    BaseType "Enlighten" "Enhance" "Empower" "Portal" "Vaal Haste" "Vaal Grace" "Vaal Clarity" "Vaal Discipline" "Added Chaos Damage" "Detonate Mines" "Block Chance Reduction" "Vaal Summon Skeletons"
     SetBorderColor 255 0 0
     SetFontSize 40
 
@@ -452,7 +546,6 @@ Hide
 
 # 所有未包含物品
 Show
-    ItemLevel >= 0
     SetTextColor 0 0 0
     SetBackgroundColor 255 255 255
     SetBorderColor 255 0 0
