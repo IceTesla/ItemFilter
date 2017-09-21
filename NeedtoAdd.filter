@@ -1,3 +1,7 @@
+#-----------------------------------------------------------
+#++++++++++++++++++++++++【命運卡】+++++++++++++++++++++++++
+#-----------------------------------------------------------
+
 #  "狼的影子"（海昂的狂怒） （避免和高階卡片"彪狼"衝突）
 Show
     Class "Divination Card"
@@ -36,3 +40,63 @@ Show
     SetBorderColor 0 0 255
     SetFontSize 45
     PlayAlertSound 2 300
+	
+#-------------------------------------------------------------------
+#+++++++++++【「白色」製作基底掉落顯示】(請自行按需添加)++++++++++++
+#-------------------------------------------------------------------	
+
+# +3武器底子 粗製弓（火靈用）
+Show
+    BaseType "Crude Bow"
+    ItemLevel >= 50
+
+	
+# 双子战爪 战叉 白金波刃 伏擊刺刃 海賊長刀 褻瀆法杖 魔性法杖 先驱者之弓 裂肉者 瓦尔巨斧 破城斧 
+Show
+    BaseType "Gemini Claw" "Sai" "Platinum Kris" "Ambusher" "Corsair Sword" "Profane Wand" "Harbinger Bow" "Fleshripper" "Vaal Axe" "Siege Axe"
+    ItemLevel >= 83
+
+# 巨人护手(力) 迷踪手套(敏) 术士手套(智) 龙鳞手套(力敏) 釦钉手套(近战伤) 擒拿手套(攻击投射伤) 魔指手套(法伤)
+Show
+    BaseType "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+    ItemLevel >= 84
+
+# 巨人胫甲(力) 迷踪短靴(敏) 术士长靴(智) 龙鳞长靴(力敏) 异色鞋(双抗)
+Show
+    BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Two-Toned Boots"
+    ItemLevel >= 84
+
+# 星芒战铠(力) 荣耀战铠(力) 瓦尔法衣(智)  胜利盔甲(力敏) 刺殺者之裝(敏，移速) 星辰皮甲(敏) 
+Show
+    BaseType "Astral Plate" "Glorious Plate" "Vaal Regalia" "Triumphant Lamellar" "Assassin's Garb" "Zodiac Leather"
+    ItemLevel >= 85
+
+# 皇室坚盔(力) 狮首皮盔(敏) 灵主之环(智) 梦魇战盔(力敏) 唤骨头盔(召唤伤)
+Show
+    BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Bone Helmet"
+    ItemLevel >= 84
+
+# 巨型塔盾(力) 漆彩轻盾(敏) 巨人魔盾(智) 艾兹麦塔盾(生命) 圣战轻盾(跑速) 石化魔盾(法伤) 威能鸢盾(三抗) 钢镜刺盾(攻躲) 霸者刺盾(法躲)
+Show
+    BaseType "Colossal Tower Shield" "Lacquered Buckler" "Titanium Spirit Shield" "Ezomyte Tower Shield" "Crusader Buckler" "Fossilised Spirit Shield" "Archon Kite Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
+    ItemLevel >= 84
+
+# 翠玉护身符(敏) 玛瑙护身符(力智) 理石护身符(秒回) 黑曜護身符(全能力)
+Show
+    BaseType "Jade Amulet" "Agate Amulet" "Marble Amulet" "Onyx Amulet"
+    ItemLevel >= 84
+
+# 钢铸戒指(物点伤) 蛋白石戒指(元素伤) 珊瑚戒指(生命) 宝钻戒指(暴击率) 潜能之戒(孔) 杰特戒指(全防)
+Show
+    BaseType "Steel Ring" "Opal Ring" "Coral Ring" "Diamond Ring" "Unset Ring" "Jet Ring"
+    ItemLevel >= 84
+
+# 刺锋箭袋
+Show
+    BaseType "Spike-Point Arrow Quiver"
+    ItemLevel >= 81
+
+# 水晶腰帶 素布腰带 皮革腰带 重革腰带 先锋腰带(护甲&闪避)
+Show
+    BaseType "Crystal Belt" "Rustic Sash" "Leather Belt" "Heavy Belt" "Vanguard Belt"
+    ItemLevel >= 84
