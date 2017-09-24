@@ -9,42 +9,57 @@
 # 卡兰德的魔镜
 Show
     BaseType "Mirror of Kalandra"
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 0 0
-    SetBorderColor 255 0 0
+    SetTextColor 0 0 0 # 黑色
+    SetBackgroundColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 45
-    PlayAlertSound 8 300
+    PlayAlertSound ShMirror 300 
 
 # 白化的羽毛 鱼竿
 Show
     BaseType "Albino Rhoa Feather" "Fishing Rod"
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 0 0
+    SetTextColor 0 0 0 # 黑色
+    SetBackgroundColor 255 0 0 # 红色
     SetFontSize 45
-    PlayAlertSound 8 300
+    PlayAlertSound 10 300
 
-# 崇高石 神圣石 永恒宝珠 印记 古变石
+# 崇高石 
 Show
     BaseType "Exalted Orb" "Divine Orb" "Eternal Orb" "Imprint" "Ancient Orb"
-    SetTextColor 255 0 0
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 0 0
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 45
-    PlayAlertSound 8 300
+    PlayAlertSound ShExalted 300
 
-# 混沌石 重铸石 富豪石 祝福石 瓦尔宝珠 宝石匠的棱镜 链接石 后悔石 银币 豐裕牌組
+# 神圣石 
 Show
-    BaseType "Chaos Orb" "Orb of Scouring" "Regal Orb" "Blessed Orb" "Vaal Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Regret" "Silver Coin" "Stacked Deck"
-    SetTextColor 255 0 0
-    SetBorderColor 255 0 0
-    PlayAlertSound 6 100
+    BaseType "Divine Orb" "Eternal Orb" "Imprint" "Ancient Orb"
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
+    SetFontSize 45
+    PlayAlertSound ShDivine 300
 
-# 点金石 机会石 蜕变石 改造石 增幅石 玻璃弹珠 幻色石 工匠石  普兰德斯金币 制图钉
+# 永恒宝珠 印记 古变石
 Show
-    BaseType "Orb of Alchemy" "Orb of Chance" "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Glassblower's Bauble" "Chromatic Orb" "Jeweller's Orb" "Perandus Coin" "Cartographer's Chisel"
-    SetTextColor 231 180 120
+    BaseType "Eternal Orb" "Imprint" "Ancient Orb"
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
+    SetFontSize 45
+    PlayAlertSound 10 300
+
+# 混沌石 重铸石 富豪石 祝福石 瓦尔宝珠 宝石匠的棱镜 链接石 后悔石 银币 豐裕牌組 点金石 制图钉
+Show
+    BaseType "Chaos Orb" "Orb of Scouring" "Regal Orb" "Blessed Orb" "Vaal Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Regret" "Silver Coin" "Stacked Deck" "Orb of Alchemy" "Cartographer's Chisel"
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
+    PlayAlertSound 6 150
+
+# 机会石 蜕变石 改造石 增幅石 玻璃弹珠 幻色石 工匠石  普兰德斯金币 
+Show
+    BaseType "Orb of Chance" "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Glassblower's Bauble" "Chromatic Orb" "Jeweller's Orb" "Perandus Coin"
+    SetTextColor 210 180 140 # 浅棕色
     SetBackgroundColor 0 0 0
-    SetBorderColor 231 180 120
+    SetBorderColor 210 180 140 # 浅棕色
 
 # 护甲片 智慧卷轴 磨刀石 传送卷轴
 Hide
@@ -57,46 +72,52 @@ Show
     Class "Currency"
     BaseType "Prophecy"
     SetTextColor 255 0 0
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 联盟石
 Show
     Class "Leaguestone"
-
-# 眾神殿之魂
-Show
-    Class "Pantheon Soul"
+    SetTextColor 255 0 255 # 紫色
+    SetBorderColor 255 0 255 # 紫色
 
 # 祝福 裂痕碎片
 Show
     BaseType "Blessing of" "Splinter of"
+    SetTextColor 210 0 220
+    SetBorderColor 255 0 255 # 紫色
+    PlayAlertSound 2 150
 
 # Section: 神谕联盟
 
-# 神谕石 無效石
+# 神谕石 無效石 制箱岩 平行石 束縛石
 Show
-    BaseType "Harbinger's Orb" "Orb of Annulment"
-
-# 束縛石
-Show
-    BaseType "Orb of Binding"
-
-# 平行石
-Show
-    BaseType "Orb of Horizons"
-
-# 制箱岩
-Show
-    BaseType "Engineer's Orb"
+    BaseType "Harbinger's Orb" "Orb of Annulment" "Engineer's Orb" "Orb of Horizons" "Orb of Binding"
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
+    PlayAlertSound 6 150
 
 # 威能碎片
 Show
     Class "Piece"
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 0 255 0 # 绿色
+    SetFontSize 45
+    PlayAlertSound 15 300
 
 # Section: 通货碎片
 
 Show
-    BaseType "Mirror Shard" "Exalted Shard" "Ancient Shard" "Annulment Shard" "Harbinger's Shard" "Regal Shard" "Chaos Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard"
+    BaseType "Mirror Shard"
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
+    SetFontSize 45
+    PlayAlertSound ShMirror 300
+
+Show
+    BaseType "Exalted Shard" "Ancient Shard" "Annulment Shard" "Harbinger's Shard" "Regal Shard" "Chaos Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard"
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
+    PlayAlertSound 6 150
 
 # 原有碎片
 Show
@@ -107,36 +128,55 @@ Show
 # 遺忘的污染器皿
 Show
     BaseType "Remnant of Corruption"
+    SetTextColor 30 144 255 # 蓝色
+    SetBorderColor 30 144 255 # 蓝色
+    PlayAlertSound 12 150
 
 Show
     BaseType "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium"
+    SetTextColor 30 144 255 # 蓝色
+    SetBorderColor 30 144 255 # 蓝色
 
 Show
     BaseType "Deafening Essence"
+    SetTextColor 30 144 255 # 蓝色
+    SetBorderColor 30 144 255 # 蓝色
 
 Show
     BaseType "Shrieking Essence of Rage" "Shrieking Essence of Spite"
+    SetTextColor 30 144 255 # 蓝色
+    SetBorderColor 30 144 255 # 蓝色
+
+Show
+    Class "Currency"
+    BaseType "Essence"
+    SetTextColor 30 144 255 # 蓝色
+    SetBorderColor 30 144 255 # 蓝色
 
 # Section: 传奇物品
 
 # 传奇物品
 Show
     Rarity = Unique
-    SetBorderColor 255 165 0
+    SetBorderColor 205 133 63 # 棕色
+    SetFontSize 35
+    PlayAlertSound 15 150
 
 # Section: 地图集
 
 Show
     BaseType "Cartographer's Seal" "Unshaping Orb"
-    SetTextColor 255 0 0
-    SetBorderColor 255 0 0
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 40
+    PlayAlertSound 6 150
 
 # 六分仪
 Show
     BaseType "Cartographer's Sextant"
-    SetTextColor 255 0 0
-    SetBorderColor 255 0 0
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
+    PlayAlertSound 6 150
 
 # Section: 地图
 
@@ -144,51 +184,62 @@ Show
 Show
     Class "Misc Map Items"
     BaseType "Ancient Reliquary Key"
-    SetTextColor 255 0 0
-    SetBorderColor 255 0 0
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 45
+    PlayAlertSound 10 300
 
 # 午夜的奉献 凡人的希望 
 Show
     Class "Map Fragments"
     BaseType "Sacrifice at Midnight" "Mortal Hope" "Key" "Fragment of the"
-    SetTextColor 74 230 58
-    SetBorderColor 74 230 58
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 0 255 0 # 绿色
     SetFontSize 45
+    PlayAlertSound 5 150
 
 # 地图
 Show
     DropLevel >= 78
     Class "Maps"
-    SetTextColor 74 230 58
-    SetBorderColor 255 0 0
-    PlayAlertSound 5 100
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 255 0 0 # 红色
+    PlayAlertSound 5 150
 
 # 神谕地图
 Show
     BaseType "Harbinger Map"
-    SetTextColor 74 230 58
-    SetBorderColor 255 0 0
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 255 0 0 # 红色
+    PlayAlertSound 5 150
 
 # 裂痕石
 Show
     Class "Misc Map Items"
     BaseType "Breachstone"
-    SetTextColor 50 230 100
-    SetBorderColor 255 0 0
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 255 0 0 # 红色
+    PlayAlertSound 5 150
 
 # 眾神聖器
 Show
     BaseType "Divine Vessel"
-    SetTextColor 74 230 58
-    SetBorderColor 255 200 0
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 255 20 147 # 粉红
+    PlayAlertSound 5 150
+
+# 眾神殿之魂
+Show
+    Class "Pantheon Soul"
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 255 20 147 # 粉红
 
 # 地图
 Show
     DropLevel >= 74
     Class "Maps"
-    SetTextColor 74 230 58
-    SetBorderColor 74 230 58
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 0 255 0 # 绿色
     PlayAlertSound 5 100
 
 # 地图 地图碎片
@@ -200,8 +251,8 @@ Show
 # 迷宫物品
 Show
     Class "Labyrinth"
-    SetTextColor 74 230 58
-    SetBorderColor 74 230 58
+    SetTextColor 0 255 0 # 绿色
+    SetBorderColor 0 255 0 # 绿色
     SetFontSize 45
 
 # Section: 命运卡
@@ -213,10 +264,11 @@ Hide
 # 其他命运卡
 Show
     Class "Divination Card"
-    SetTextColor 0 0 255
-    SetBackgroundColor 255 255 255
-    SetBorderColor 30 144 255
+    SetTextColor 30 144 255 # 蓝色
+    SetBackgroundColor 255 255 255 # 白色
+    SetBorderColor 30 144 255 # 蓝色
     SetFontSize 35
+    PlayAlertSound 8 250
 
 # Section: 珠宝
 
@@ -224,29 +276,28 @@ Show
 Show
     Class "Jewel"
     Rarity = Rare
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 215 0
-    SetBorderColor 0 0 0
+    SetTextColor 175 238 238 # 淡蓝色
+    SetBorderColor 175 238 238 # 淡蓝色
 
 # Section: 魔符
 
 # 魔符
 Show
     BaseType "Talisman"
-    SetTextColor 255 255 0
-    SetBackgroundColor 128 0 128
-    SetBorderColor 128 0 128
+    SetTextColor 255 20 147 # 粉红
+    SetBorderColor 255 20 147 # 粉红
+    SetFontSize 40
+    PlayAlertSound 12 150
 
 # Section: 6连 5连 6洞 3连RGB
 
 # 六连装备
 Show
     LinkedSockets = 6
-    SetTextColor 255 0 0
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 0 0
+    SetTextColor 255 0 0 # 红色
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 45
-    PlayAlertSound 8 300
+    PlayAlertSound ShDivine 300
 
 #Disabled Block Start
 # 五连装备
@@ -257,10 +308,11 @@ Show
 # 六洞装备
 Show
     Sockets = 6
-    SetTextColor 255 255 255
-    SetBackgroundColor 255 215 0
-    SetBorderColor 255 255 255
-    SetFontSize 40
+    SetTextColor 255 255 255 # 白色
+    SetBackgroundColor 255 215 0 # 黄色
+    SetBorderColor 255 255 255 # 白色
+    SetFontSize 35
+    PlayAlertSound 2 150
 
 #Disabled Block Start
 # RGB换幻色石
@@ -268,7 +320,6 @@ Show
 #    LinkedSockets >= 3
 #    SocketGroup "RGB"
 #    Rarity <= Magic
-#    SetBorderColor 184 218 242
 #Disabled Block End
 
 #Disabled Block Start
@@ -286,32 +337,41 @@ Show
     BaseType "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Two-Toned Boots" "Bone Helmet"
     Rarity <= Magic
     ItemLevel >= 84
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 255 255
-    SetBorderColor 255 255 255
+    SetTextColor 255 255 255 # 白色
+    SetBackgroundColor 255 255 255 100 # 白底透明
+    SetBorderColor 255 255 255 # 白色
 
 # 玛瑙护身符(力智) 钢铸戒指(物点伤) 蛋白石戒指(元素伤) 珊瑚戒指(生命) 宝钻戒指(暴击率)
 Show
     BaseType "Agate Amulet" "Steel Ring" "Opal Ring" "Coral Ring" "Diamond Ring"
     Rarity <= Magic
     ItemLevel >= 84
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 255 255
-    SetBorderColor 255 255 255
+    SetTextColor 255 255 255 # 白色
+    SetBackgroundColor 255 255 255 100 # 白底透明
+    SetBorderColor 255 255 255 # 白色
 
 # 水晶腰帶 素布腰带 皮革腰带 重革腰带 先锋腰带(护甲&闪避)
 Show
     BaseType "Crystal Belt" "Rustic Sash" "Leather Belt" "Heavy Belt" "Vanguard Belt"
     Rarity <= Magic
     ItemLevel >= 84
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 255 255
-    SetBorderColor 255 255 255
+    SetTextColor 255 255 255 # 白色
+    SetBackgroundColor 255 255 255 100 # 白底透明
+    SetBorderColor 255 255 255 # 白色
+
+# 刺锋箭袋
+Show
+    BaseType "Spike-Point Arrow Quiver"
+    Rarity <= Magic
+    ItemLevel >= 81
+    SetTextColor 255 255 255 # 白色
+    SetBackgroundColor 255 255 255 100 # 白底透明
+    SetBorderColor 255 255 255 # 白色
 
 # 特殊装备(迷宫/女王/竞赛)
 Show
     BaseType "Sacrificial Garb" "Golden Bracers" "Golden Caligae" "Golden Mantle" "Golden Wreath" "Golden Flame" "Golden Obi" "Avian Slippers" "Breach Ring"
-    SetBorderColor 210 0 0
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 40
 
 #Disabled Block Start
@@ -319,7 +379,7 @@ Show
 #Show
 #    BaseType "Prophecy Wand" "Sorcerer Boots"
 #    Rarity = Normal
-#    SetBorderColor 184 218 242
+#    SetBorderColor 175 238 238 # 淡蓝色
 #Disabled Block End
 
 #Disabled Block Start
@@ -327,7 +387,7 @@ Show
 #Show
 #    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
 #    Rarity = Normal
-#    SetBorderColor 184 218 242
+#    SetBorderColor 175 238 238 # 淡蓝色
 #Disabled Block End
 
 Hide
@@ -341,70 +401,70 @@ Show
     BaseType "Gemini Claw" "Sai" "Platinum Kris" "Ambusher" "Corsair Sword" "Profane Wand" "Imbued Wand" "Harbinger Bow" "Fleshripper" "Vaal Axe" "Siege Axe" "Jewelled Foil" "Void Sceptre" "Sambar Sceptre" "Nightmare Mace" "Eclipse Staff" "Imperial Staff" "Exquisite Blade"
     Rarity = Rare
     ItemLevel >= 83
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 巨人护手(力) 迷踪手套(敏) 术士手套(智) 龙鳞手套(力敏) 釦钉手套(近战伤) 擒拿手套(攻击投射伤) 魔指手套(法伤) 暗殺者護手(敏智) 聖戰手套(力智)
 Show
     BaseType "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Murder Mitts" "Crusader Gloves"
     Rarity = Rare
     ItemLevel >= 84
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 巨人胫甲(力) 迷踪短靴(敏) 术士长靴(智) 龙鳞长靴(力敏) 异色鞋(双抗)
 Show
     BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Two-Toned Boots"
     Rarity = Rare
     ItemLevel >= 84
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 星芒战铠(力) 荣耀战铠(力) 瓦尔法衣(智)  胜利盔甲(力敏) 刺殺者之裝(敏，移速) 星辰皮甲(敏) 
 Show
     BaseType "Astral Plate" "Glorious Plate" "Vaal Regalia" "Triumphant Lamellar" "Assassin's Garb" "Zodiac Leather"
     Rarity = Rare
     ItemLevel >= 85
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 皇室坚盔(力) 狮首皮盔(敏) 灵主之环(智) 梦魇战盔(力敏) 唤骨头盔(召唤伤)
 Show
     BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Bone Helmet"
     Rarity = Rare
     ItemLevel >= 84
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 巨型塔盾(力) 漆彩轻盾(敏) 巨人魔盾(智) 艾兹麦塔盾(生命) 圣战轻盾(跑速) 石化魔盾(法伤) 威能鸢盾(三抗) 钢镜刺盾(攻躲) 霸者刺盾(法躲)
 Show
     BaseType "Colossal Tower Shield" "Lacquered Buckler" "Titanium Spirit Shield" "Ezomyte Tower Shield" "Crusader Buckler" "Fossilised Spirit Shield" "Archon Kite Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
     Rarity = Rare
     ItemLevel >= 84
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 翠玉护身符(敏) 玛瑙护身符(力智) 理石护身符(秒回) 黑曜護身符(全能力)
 Show
     BaseType "Jade Amulet" "Agate Amulet" "Marble Amulet" "Onyx Amulet"
     Rarity = Rare
     ItemLevel >= 84
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 钢铸戒指(物点伤) 蛋白石戒指(元素伤) 珊瑚戒指(生命) 宝钻戒指(暴击率) 潜能之戒(孔) 杰特戒指(全防)
 Show
     BaseType "Steel Ring" "Opal Ring" "Coral Ring" "Diamond Ring" "Unset Ring" "Jet Ring"
     Rarity = Rare
     ItemLevel >= 84
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 刺锋箭袋 寬矢箭袋
 Show
     BaseType "Spike-Point Arrow Quiver" "Broadhead Arrow Quiver"
     Rarity = Rare
     ItemLevel >= 81
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # 水晶腰帶 素布腰带 皮革腰带 重革腰带 先锋腰带(护甲&闪避)
 Show
     BaseType "Crystal Belt" "Rustic Sash" "Leather Belt" "Heavy Belt" "Vanguard Belt"
     Rarity = Rare
     ItemLevel >= 84
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
 
 # Section: 黄装换C
 
@@ -413,44 +473,48 @@ Show
     Class "Rings" "Amulets" "Belts"
     Rarity = Rare
     ItemLevel >= 60
-    SetBorderColor 208 32 144
+    SetBorderColor 255 20 147 # 粉红
 
 # 75以上黄装
 Show
     Rarity = Rare
     ItemLevel >= 75
-    SetBorderColor 180 96 0
+    SetBorderColor 205 133 63 # 棕色
 
 # 60以上黄装
 Show
     Rarity = Rare
     ItemLevel >= 60
     ItemLevel < 75
-    SetBorderColor 255 255 0
+    SetBorderColor 255 255 0 # 黄色
 
 # Section: 技能石
 
 # 瓦尔裂痕 物品数量
 Show
     BaseType "Vaal Breach" "Item Quantity"
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 45
+    PlayAlertSound 2 300
 
 # 启蒙 增幅 赋予 时空之门 瓦尔迅捷 瓦尔优雅 瓦尔清晰 瓦尔纪律 附加混沌伤害 减少格挡几率 引爆地雷 瓦尔召唤骷髅
 Show
     BaseType "Enlighten" "Enhance" "Empower" "Portal" "Vaal Haste" "Vaal Grace" "Vaal Clarity" "Vaal Discipline" "Added Chaos Damage" "Detonate Mines" "Block Chance Reduction" "Vaal Summon Skeletons"
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 40
+    PlayAlertSound 2 300
 
 # 技能石
 Show
     Quality > 0
     Class "Active Skill Gems" "Support Skill Gems"
+    SetBorderColor 0 139 139 # 深绿色
 
 # 技能石
 Hide
     Quality = 0
     Class "Active Skill Gems" "Support Skill Gems"
+    SetBorderColor 0 139 139 # 深绿色
 
 # Section: 药水
 
@@ -466,13 +530,13 @@ Hide
 #Show
 #    Class "Utility Flasks"
 #    ItemLevel >= 20
-#    SetBorderColor 255 255 119
+#    SetBorderColor 255 255 0 # 黄色
 #Disabled Block End
 
 # 隐藏其余药剂
 Hide
     Class "Flasks"
-    SetBorderColor 255 255 119
+    SetBorderColor 255 255 0 # 黄色
 
 # Section: 任务物品
 
@@ -493,8 +557,9 @@ Hide
 
 # 所有未包含物品
 Show
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 255 255
-    SetBorderColor 255 0 0
+    SetTextColor 0 0 0 # 黑色
+    SetBackgroundColor 255 255 255 # 白色
+    SetBorderColor 255 0 0 # 红色
     SetFontSize 45
+    PlayAlertSound 1 79
 

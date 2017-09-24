@@ -1,0 +1,20 @@
+PlayAlertSound
+2 东西砸地
+4 huyahu
+5 haxi
+6 jin
+8 dengdengdeng
+10 deng！
+12 弹瓶子
+15 滚珠在盘子上滚
+
+ShAlchemy
+ShBlessed
+ShChaos
+ShDivine
+ShExalted
+ShFusing
+ShGeneral
+ShMirror
+ShRegal
+ShVaal
