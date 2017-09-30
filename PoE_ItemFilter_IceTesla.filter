@@ -85,7 +85,7 @@ Show
     BaseType "Blessing of" "Splinter of"
     SetTextColor 210 0 220
     SetBorderColor 255 0 255 # 紫色
-    PlayAlertSound 2 150
+    PlayAlertSound 1 150
 
 # Section: 神谕联盟
 
@@ -204,7 +204,7 @@ Show
     Class "Maps"
     SetTextColor 0 255 0 # 绿色
     SetBorderColor 255 0 0 # 红色
-    PlayAlertSound 5 150
+    PlayAlertSound 5 200
 
 # 神谕地图
 Show
@@ -236,11 +236,11 @@ Show
 
 # 地图
 Show
-    DropLevel >= 74
+    DropLevel >= 76
     Class "Maps"
     SetTextColor 0 255 0 # 绿色
     SetBorderColor 0 255 0 # 绿色
-    PlayAlertSound 5 100
+    PlayAlertSound 4 50
 
 # 地图 地图碎片
 Show
@@ -259,7 +259,7 @@ Show
 
 Hide
     Class "Divination Card"
-    BaseType "Lantador's Lost Love" "The Metalsmith's Gift" "The Scholar" "The Carrion Crow" "Rain of Chaos" "Prosperity" "Shard of Fate" "The Endurance" "The Surgeon"
+    BaseType "Lantador's Lost Love" "The Metalsmith's Gift" "The Scholar" "The Carrion Crow" "Rain of Chaos" "Prosperity" "Shard of Fate" "The Endurance" "The Surgeon" "Thunderous Skies"
 
 # 其他命运卡
 Show
@@ -278,6 +278,10 @@ Show
     Rarity = Rare
     SetTextColor 175 238 238 # 淡蓝色
     SetBorderColor 175 238 238 # 淡蓝色
+	
+Hide 
+	Class "Jewel"
+	Rarity < Rare
 
 # Section: 魔符
 
@@ -495,14 +499,14 @@ Show
     BaseType "Vaal Breach" "Item Quantity"
     SetBorderColor 255 0 0 # 红色
     SetFontSize 45
-    PlayAlertSound 2 300
+    PlayAlertSound 1 300
 
 # 启蒙 增幅 赋予 时空之门 瓦尔迅捷 瓦尔优雅 瓦尔清晰 瓦尔纪律 附加混沌伤害 减少格挡几率 引爆地雷 瓦尔召唤骷髅
 Show
     BaseType "Enlighten" "Enhance" "Empower" "Portal" "Vaal Haste" "Vaal Grace" "Vaal Clarity" "Vaal Discipline" "Added Chaos Damage" "Detonate Mines" "Block Chance Reduction" "Vaal Summon Skeletons"
     SetBorderColor 255 0 0 # 红色
     SetFontSize 40
-    PlayAlertSound 2 300
+    PlayAlertSound 1 300
 
 # 技能石
 Show
