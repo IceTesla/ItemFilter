@@ -25,7 +25,7 @@ Show
 
 # 崇高石 
 Show
-    BaseType "Exalted Orb" "Divine Orb" "Eternal Orb" "Imprint" "Ancient Orb"
+    BaseType "Exalted Orb" 
     SetTextColor 255 0 0 # 红色
     SetBorderColor 255 0 0 # 红色
     SetFontSize 45
@@ -33,7 +33,7 @@ Show
 
 # 神圣石 
 Show
-    BaseType "Divine Orb" "Eternal Orb" "Imprint" "Ancient Orb"
+    BaseType "Divine Orb" 
     SetTextColor 255 0 0 # 红色
     SetBorderColor 255 0 0 # 红色
     SetFontSize 45
@@ -236,12 +236,19 @@ Show
 
 # 地图
 Show
-    DropLevel >= 76
+    DropLevel >= 77
     Class "Maps"
     SetTextColor 0 255 0 # 绿色
     SetBorderColor 0 255 0 # 绿色
     PlayAlertSound 4 50
 
+# 塑形地图
+Show
+	Class "Maps"
+	BaseType "Shaped"
+	SetTextColor 0 255 0 # 绿色
+    SetBorderColor 0 255 0 # 绿色
+	
 # 地图 地图碎片
 Show
     Class "Map Fragments" "Maps"
@@ -345,9 +352,9 @@ Show
     SetBackgroundColor 255 255 255 100 # 白底透明
     SetBorderColor 255 255 255 # 白色
 
-# 玛瑙护身符(力智) 钢铸戒指(物点伤) 蛋白石戒指(元素伤) 珊瑚戒指(生命) 宝钻戒指(暴击率)
+# 玛瑙护身符(力智) 钢铸戒指(物点伤) 蛋白石戒指(元素伤) 珊瑚戒指(生命) 宝钻戒指(暴击率) 青玉護身符（敏智）
 Show
-    BaseType "Agate Amulet" "Steel Ring" "Opal Ring" "Coral Ring" "Diamond Ring"
+    BaseType "Agate Amulet" "Steel Ring" "Opal Ring" "Coral Ring" "Diamond Ring" "Turquoise Amulet"
     Rarity <= Magic
     ItemLevel >= 84
     SetTextColor 255 255 255 # 白色
@@ -378,13 +385,13 @@ Show
     SetBorderColor 255 0 0 # 红色
     SetFontSize 40
 
-#Disabled Block Start
+
 # 箴言法杖 术士长靴
-#Show
-#    BaseType "Prophecy Wand" "Sorcerer Boots"
-#    Rarity = Normal
-#    SetBorderColor 175 238 238 # 淡蓝色
-#Disabled Block End
+Show
+    BaseType "Prophecy Wand" "Sorcerer Boots"
+    Rarity = Normal
+    SetBorderColor 175 238 238 # 淡蓝色
+
 
 #Disabled Block Start
 # 石锤 破岩锤 坚锤
@@ -442,9 +449,9 @@ Show
     ItemLevel >= 84
     SetBorderColor 255 0 0 # 红色
 
-# 翠玉护身符(敏) 玛瑙护身符(力智) 理石护身符(秒回) 黑曜護身符(全能力)
+# 翠玉护身符(敏) 玛瑙护身符(力智) 理石护身符(秒回) 黑曜護身符(全能力) 青玉護身符（敏智）
 Show
-    BaseType "Jade Amulet" "Agate Amulet" "Marble Amulet" "Onyx Amulet"
+    BaseType "Jade Amulet" "Agate Amulet" "Marble Amulet" "Onyx Amulet" "Turquoise Amulet"
     Rarity = Rare
     ItemLevel >= 84
     SetBorderColor 255 0 0 # 红色
@@ -471,6 +478,13 @@ Show
     SetBorderColor 255 0 0 # 红色
 
 # Section: 黄装换C
+
+# 75以上黄装鞋子
+Show
+    Rarity = Rare 
+	Class "Boots"
+    ItemLevel >= 75
+    SetBorderColor 255 0 0 # 红色
 
 # 60以上黄装首饰
 Show
@@ -548,7 +562,17 @@ Hide
 Show
     Class "Quest Items"
     SetFontSize 45
+	
+# Section: 低级装备
+# 60以下黄装
+Show
+    Rarity = Rare
+    ItemLevel < 60	
 
+Show
+    Rarity < Rare
+    ItemLevel < 30
+	
 # Section: 隐藏物品
 
 # 隐藏大于等于30的 戒指 护身符 腰带 弓 细剑 法杖 爪 匕首 单手 双手 权杖 手套 鞋 胸甲 头盔 盾牌 箭筒 长杖
