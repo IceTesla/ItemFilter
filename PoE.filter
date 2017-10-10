@@ -536,23 +536,21 @@ Hide
 
 # Section: 药水
 
-#Disabled Block Start
-# 永恒生命药剂 永恒魔力药剂 不朽生命药剂 不朽魔力药剂 祝福复合药剂 
-#Show
-#    Class "Flasks"
-#    BaseType "Eternal Life Flask" "Eternal Mana Flask" "Divine Life Flask" "Divine Mana Flask" "Hallowed Hybrid Flask"
-#Disabled Block End
 
-#Disabled Block Start
+# 永恒生命药剂 永恒魔力药剂 不朽生命药剂 不朽魔力药剂 祝福复合药剂 
+Show
+    Class "Flasks"
+    BaseType "Eternal Life Flask" "Eternal Mana Flask" "Divine Life Flask" "Divine Mana Flask" "Hallowed Hybrid Flask"
+
+
 # 20等级以上的功能药剂
-#Show
-#    Class "Utility Flasks"
-#    ItemLevel >= 20
-#    SetBorderColor 255 255 0 # 黄色
-#Disabled Block End
+Show
+    Class "Utility Flasks"
+    ItemLevel >= 20
+    SetBorderColor 255 255 0 # 黄色
 
 # 隐藏其余药剂
-Hide
+Show
     Class "Flasks"
     SetBorderColor 255 255 0 # 黄色
 
