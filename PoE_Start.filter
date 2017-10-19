@@ -569,7 +569,7 @@ Show
 
 Show
     Rarity < Rare
-    ItemLevel < 30
+    ItemLevel <= 30
 	
 # Section: 隐藏物品
 

@@ -343,27 +343,34 @@ Show
 
 # Section: 优质白底
 
-# 釦钉手套(近战伤) 擒拿手套(攻击投射伤) 魔指手套(法伤) 异色鞋(双抗) 唤骨头盔(召唤伤)
+# 釦钉手套(近战伤) 擒拿手套(攻击投射伤) 魔指手套(法伤) 异色鞋(双抗) 唤骨头盔(召唤伤)  水晶腰帶(ES)
 Show
-    BaseType "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Two-Toned Boots" "Bone Helmet"
+    BaseType "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Two-Toned Boots" "Bone Helmet" "Crystal Belt"
+    SetTextColor 255 255 255 # 白色
+	SetFontSize 45
+    SetBackgroundColor 255 255 255 100 # 白底透明
+    SetBorderColor 255 0 0 # 红色
+
+# 钢铸戒指(物点伤) 蛋白石戒指(元素伤)
+Show
+	BaseType "Steel Ring" "Opal Ring"
+	SetTextColor 255 255 255 # 白色
+	SetFontSize 45
+    SetBackgroundColor 255 255 255 100 # 白底透明
+    SetBorderColor 255 0 0 # 红色
+
+# 玛瑙护身符(力智)  珊瑚戒指(生命) 宝钻戒指(暴击率) 青玉護身符（敏智）
+Show
+    BaseType "Agate Amulet" "Coral Ring" "Diamond Ring" "Turquoise Amulet"
     Rarity <= Magic
     ItemLevel >= 84
     SetTextColor 255 255 255 # 白色
     SetBackgroundColor 255 255 255 100 # 白底透明
     SetBorderColor 255 255 255 # 白色
 
-# 玛瑙护身符(力智) 钢铸戒指(物点伤) 蛋白石戒指(元素伤) 珊瑚戒指(生命) 宝钻戒指(暴击率) 青玉護身符（敏智）
+# 素布腰带 皮革腰带 重革腰带 先锋腰带(护甲&闪避)
 Show
-    BaseType "Agate Amulet" "Steel Ring" "Opal Ring" "Coral Ring" "Diamond Ring" "Turquoise Amulet"
-    Rarity <= Magic
-    ItemLevel >= 84
-    SetTextColor 255 255 255 # 白色
-    SetBackgroundColor 255 255 255 100 # 白底透明
-    SetBorderColor 255 255 255 # 白色
-
-# 水晶腰帶 素布腰带 皮革腰带 重革腰带 先锋腰带(护甲&闪避)
-Show
-    BaseType "Crystal Belt" "Rustic Sash" "Leather Belt" "Heavy Belt" "Vanguard Belt"
+    BaseType "Rustic Sash" "Leather Belt" "Heavy Belt" "Vanguard Belt"
     Rarity <= Magic
     ItemLevel >= 84
     SetTextColor 255 255 255 # 白色
@@ -571,7 +578,7 @@ Show
 
 Show
     Rarity < Rare
-    ItemLevel < 30
+    ItemLevel <= 30
 	
 # Section: 隐藏物品
 
